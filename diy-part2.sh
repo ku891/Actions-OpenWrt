@@ -25,8 +25,5 @@ sed -i "s/option ignore '0'/option ignore '1'/" package/network/services/dnsmasq
 # OpenClash
 git clone -b https://github.com/vernesong/OpenClash package/OpenClash
 
-# Passwall
-#git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
-
 # Fileshare
 git clone https://github.com/ku891/fileshare-openwrt.git package/fileshare

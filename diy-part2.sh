@@ -11,16 +11,19 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-#sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/TR3000/g' package/base-files/files/bin/config_generate
+
+# 关闭 DHCP（旁路由用）
+sed -i "s/option ignore '0'/option ignore '1'/" package/network/services/dnsmasq/files/dhcp.conf
 
 # OpenClash
-git clone https://github.com/vernesong/OpenClash package/OpenClash
+git -b clone https://github.com/vernesong/OpenClash package/OpenClash
 
 # Passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall

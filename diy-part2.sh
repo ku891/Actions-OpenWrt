@@ -23,7 +23,7 @@ sed -i 's/OpenWrt/TR3000/g' package/base-files/files/bin/config_generate
 sed -i "s/option ignore '0'/option ignore '1'/" package/network/services/dnsmasq/files/dhcp.conf
 
 # OpenClash
-git -b clone https://github.com/vernesong/OpenClash package/OpenClash
+git clone -b https://github.com/vernesong/OpenClash package/OpenClash
 
 # Passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall

@@ -9,7 +9,10 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
+#!/bin/bash
 
+# 替换国内源
+sed -i 's#https://github.com#https://githubfast.com#g' feeds.conf.default
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 

@@ -18,3 +18,12 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+# OpenClash
+git clone https://github.com/vernesong/OpenClash package/OpenClash
+
+# Passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
+
+# Fileshare
+git clone https://github.com/ku891/fileshare-openwrt.git package/fileshare
